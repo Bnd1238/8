@@ -5,10 +5,8 @@
 int main()
 {
 	student egor,vana;
-	egor.SetName("Egor");
-	egor.SetSurname("Bogdanov");
+	cin >> egor;
 	vana = egor;
-	//vana.print();
-	cout << egor;
+	cout << vana;
 	return 0;
 }

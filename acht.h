@@ -48,5 +48,6 @@ public:
 	void print();
 };
 ostream& operator<<(ostream& os, const student& s);
+istream& operator>> (istream& is, student& s);
 
 #endif

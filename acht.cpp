@@ -61,3 +61,17 @@ ostream& operator<<(ostream& os, const student& s)
 	return os << s.GetAge() << " " << s.GetName() << " " 
 		<< s.GetSurname() << " " << s.GetBall() << endl;
 }
+
+istream& operator>> (istream& is, student &s)
+{
+	int age;
+	string name;
+	string surname;
+	int ball;
+	is >> age >> name >> surname >> ball;
+	s.SetAge(age);
+	s.SetName(name);
+	s.SetSurname(surname);
+	s.SetBall(ball);
+	return is;
+}
